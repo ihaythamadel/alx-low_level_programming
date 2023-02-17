@@ -1,16 +1,19 @@
+#include <stdio.h>
 /**
- * main - This will prints letter a to z in lowercase
- *
- * Return : 0
+ * main - Entry point
+ * Description: prints the alphabet in lowercase\n
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-        char ch = "a";
+	char letter = 'a';
 
-        while (ch <= "z")
-        {
-                putchar(ch);
-                ch++;
-        }
-        return (0);
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter++;
+	}
+	putchar('\n');
+	return (0);
+
 }

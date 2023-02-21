@@ -1,4 +1,4 @@
-dd#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Prints the first 98 Fibonacci numbers, starting with 1 and 2.
@@ -13,7 +13,7 @@ int main(void)
 
 	printf("%lu, %lu", a, b);
 
-	for (i = 3; i <= 98; i++)
+	for (i = 3; i <= 95; i++)
 	{
 		c = a + b;
 		printf(", %lu", c);

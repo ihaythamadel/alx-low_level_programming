@@ -1,22 +1,34 @@
 #include "main.h"
 
 /**
- * * _pow_recursion - Returns the value of x raised to the power of y
- * @x: The number to be raised
- * @y: The power
- * Return: The value of x raised to the power of y
+ * is_prime - detects if an input number is a prime number.
+ * @n: input number.
+ * @c: iterator.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
  */
-
-int _pow_recursion(int x, int y)
+int is_prime(unsigned int n, unsigned int c)
 {
-	int a = x;
-
-	if (y < 0)
-		return (-1);
-
-	else of (y == 0)
-		return (1);
-
-	a *= _pow_recursion(x, y - 1);
-	return (a)
+	if (n % c == 0)
+	{
+		if (n == c)
+			return (1);
+		else
+			return (0);
+	}
+	return (0 + is_prime(n, c + 1));
+}
+/**
+ * is_prime_number - detects if an input number is a prime number.
+ * @n: input number.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ */
+int is_prime_number(int n)
+{
+	if (n == 0)
+		return (0);
+	if (n < 0)
+		return (0);
+	if (n == 1)
+		return (0);
+	return (is_prime(n, 2));
 }

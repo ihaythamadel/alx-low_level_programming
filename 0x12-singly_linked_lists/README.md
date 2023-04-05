@@ -71,8 +71,6 @@
 
 ---
 
-![img](../.imgs/hare_and_tortoise.jpg)
-
 5. [The Hare and the Tortoise](./100-first.c) : A function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
 	- You are allowed to use the `printf` function.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/100-main.c 100-first.c -o first`
